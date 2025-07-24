@@ -102,14 +102,14 @@ tc_inicial = st.sidebar.number_input(
 
 st.sidebar.subheader("Supuestos Macroeconómicos (Proyecciones)")
 tasa_descuento_anual_pct = st.sidebar.slider(
-    "Tasa de Descuento Anual (Costo de Oportunidad %)", 0.0, 300.0, 120.0, 1.0,
+    "Tasa de Descuento Anual (Costo de Oportunidad %)", 0.0, 300.0, 120.0, 0.01,
     help="Es la tasa de rendimiento que su empresa podría obtener con el dinero (ej. tasa de plazo fijo, caución, etc.). Se usa para traer los flujos futuros a valor de hoy."
 )
 inflacion_mensual_pct = st.sidebar.slider(
-    "Opción 2: Inflación Mensual Promedio Proyectada (%)", 0.0, 30.0, 9.0, 0.1
+    "Opción 2: Inflación Mensual Promedio Proyectada (%)", 0.0, 30.0, 9.0, 0.01
 )
 devaluacion_mensual_pct = st.sidebar.slider(
-    "Opción 3: Devaluación Mensual Promedio Proyectada (%)", 0.0, 30.0, 5.0, 0.1
+    "Opción 3: Devaluación Mensual Promedio Proyectada (%)", 0.0, 30.0, 5.0, 0.01
 )
 
 # --- Lógica Principal y Visualización ---
